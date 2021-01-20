@@ -1,3 +1,24 @@
+"""
+*******************RECURSIVE DFS APPROACH************************
+
+stack=[]
+visited=[]
+
+dfs(source, visited):
+    1. If source not visited:
+            #Add source to visited
+
+            if source not in adjacency list or has no children:
+                return visited
+
+            for each neighbours of source:
+                dfs(neighbour, visited)
+
+        return visited
+
+"""
+
+
 graph = {"A": ["D", "C", "B"],
          "B": ["E"],
          "C": ["G", "F"],
